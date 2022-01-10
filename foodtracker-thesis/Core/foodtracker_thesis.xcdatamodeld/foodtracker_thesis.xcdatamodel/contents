@@ -17,16 +17,18 @@
         <attribute name="foodQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="foodTypeId" optional="YES" attributeType="String"/>
         <attribute name="storeDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="foodCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodType" inverseName="foodItems" inverseEntity="FoodType"/>
     </entity>
     <entity name="FoodType" representedClassName="FoodType" syncable="YES" codeGenerationType="class">
         <attribute name="foodTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="foodTypeName" optional="YES" attributeType="String"/>
         <attribute name="wasteType" optional="YES" attributeType="String"/>
+        <relationship name="foodItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FoodData" inverseName="foodCategory" inverseEntity="FoodData"/>
     </entity>
     <elements>
         <element name="CompostData" positionX="-36" positionY="9" width="128" height="74"/>
         <element name="CompostDetail" positionX="-18" positionY="27" width="128" height="74"/>
-        <element name="FoodData" positionX="-63" positionY="-18" width="128" height="119"/>
-        <element name="FoodType" positionX="-54" positionY="-9" width="128" height="74"/>
+        <element name="FoodData" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="FoodType" positionX="-54" positionY="-9" width="128" height="89"/>
     </elements>
 </model>
