@@ -30,8 +30,6 @@
 		67285C9527845F6D009108D7 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C9427845F6D009108D7 /* ArticleListViewController.swift */; };
 		67285C9927845FA1009108D7 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C9827845FA1009108D7 /* ArticleDetailViewController.swift */; };
 		67285C9B27845FAC009108D7 /* ArticleDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C9A27845FAC009108D7 /* ArticleDetail.storyboard */; };
-		673A0502278BE14B008A2EE1 /* FoodItemRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0500278BE14B008A2EE1 /* FoodItemRecommendCell.swift */; };
-		673A0503278BE14B008A2EE1 /* FoodItemRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A0501278BE14B008A2EE1 /* FoodItemRecommendCell.xib */; };
 		673A0507278BE20C008A2EE1 /* PreloadFoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0506278BE20C008A2EE1 /* PreloadFoodData.swift */; };
 		673A0509278BE24F008A2EE1 /* FoodDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0508278BE24F008A2EE1 /* FoodDataRepository.swift */; };
 		673A050B278BE38E008A2EE1 /* FoodCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A050A278BE38E008A2EE1 /* FoodCategoryRepository.swift */; };
@@ -40,6 +38,8 @@
 		673A0511278BEA44008A2EE1 /* PreloadFoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0510278BEA44008A2EE1 /* PreloadFoodCategory.swift */; };
 		673A0513278BEA54008A2EE1 /* PreloadCompostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0512278BEA54008A2EE1 /* PreloadCompostData.swift */; };
 		673A0515278BEA62008A2EE1 /* PreloadCompostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */; };
+		673A051C278BF676008A2EE1 /* FoodItemRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */; };
+		673A051D278BF676008A2EE1 /* FoodItemRecommendationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */; };
 		67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1027732E3300B0C469 /* FoodRecordCell.swift */; };
 		67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1127732E3300B0C469 /* FoodRecordCell.xib */; };
 		67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1427732F7100B0C469 /* CompostTableCell.swift */; };
@@ -105,8 +105,6 @@
 		67285C9427845F6D009108D7 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		67285C9827845FA1009108D7 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		67285C9A27845FAC009108D7 /* ArticleDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetail.storyboard; sourceTree = "<group>"; };
-		673A0500278BE14B008A2EE1 /* FoodItemRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemRecommendCell.swift; sourceTree = "<group>"; };
-		673A0501278BE14B008A2EE1 /* FoodItemRecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemRecommendCell.xib; sourceTree = "<group>"; };
 		673A0506278BE20C008A2EE1 /* PreloadFoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadFoodData.swift; sourceTree = "<group>"; };
 		673A0508278BE24F008A2EE1 /* FoodDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataRepository.swift; sourceTree = "<group>"; };
 		673A050A278BE38E008A2EE1 /* FoodCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryRepository.swift; sourceTree = "<group>"; };
@@ -115,6 +113,8 @@
 		673A0510278BEA44008A2EE1 /* PreloadFoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadFoodCategory.swift; sourceTree = "<group>"; };
 		673A0512278BEA54008A2EE1 /* PreloadCompostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCompostData.swift; sourceTree = "<group>"; };
 		673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCompostDetail.swift; sourceTree = "<group>"; };
+		673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemRecommendationCell.swift; sourceTree = "<group>"; };
+		673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemRecommendationCell.xib; sourceTree = "<group>"; };
 		67F09F1027732E3300B0C469 /* FoodRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordCell.swift; sourceTree = "<group>"; };
 		67F09F1127732E3300B0C469 /* FoodRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordCell.xib; sourceTree = "<group>"; };
 		67F09F1427732F7100B0C469 /* CompostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTableCell.swift; sourceTree = "<group>"; };
@@ -284,8 +284,8 @@
 				67F09F1527732F7100B0C469 /* CompostTableCell.xib */,
 				67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */,
 				67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */,
-				673A0500278BE14B008A2EE1 /* FoodItemRecommendCell.swift */,
-				673A0501278BE14B008A2EE1 /* FoodItemRecommendCell.xib */,
+				673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */,
+				673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -482,7 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F35B52276AE2480068985B /* LaunchScreen.storyboard in Resources */,
-				673A0503278BE14B008A2EE1 /* FoodItemRecommendCell.xib in Resources */,
 				67285C9327845F62009108D7 /* ArticleList.storyboard in Resources */,
 				67F09F1727732F7100B0C469 /* CompostTableCell.xib in Resources */,
 				67285C8B27845E40009108D7 /* CompostForm.storyboard in Resources */,
@@ -493,6 +492,7 @@
 				67285C9027845E8F009108D7 /* RootTabBar.storyboard in Resources */,
 				67285C7B2782BA98009108D7 /* FoodTracker.storyboard in Resources */,
 				67F35B4A276AE2470068985B /* Main.storyboard in Resources */,
+				673A051D278BF676008A2EE1 /* FoodItemRecommendationCell.xib in Resources */,
 				67285C7F27845DB9009108D7 /* CompostList.storyboard in Resources */,
 				67F09F1D27732FC700B0C469 /* FoodCategoryCell.xib in Resources */,
 			);
@@ -521,9 +521,9 @@
 			files = (
 				67F35B47276AE2470068985B /* ViewController.swift in Sources */,
 				673A050B278BE38E008A2EE1 /* FoodCategoryRepository.swift in Sources */,
-				673A0502278BE14B008A2EE1 /* FoodItemRecommendCell.swift in Sources */,
 				67F09F2C2773314A00B0C469 /* Cell+Extension.swift in Sources */,
 				67F09F2A2773313D00B0C469 /* TableViewCell+Extension.swift in Sources */,
+				673A051C278BF676008A2EE1 /* FoodItemRecommendationCell.swift in Sources */,
 				67F09F212773307200B0C469 /* Date+Extension.swift in Sources */,
 				67285C8427845DF8009108D7 /* FoodFormViewController.swift in Sources */,
 				67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */,
