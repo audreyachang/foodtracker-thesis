@@ -40,6 +40,8 @@
 		673A0515278BEA62008A2EE1 /* PreloadCompostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */; };
 		673A051C278BF676008A2EE1 /* FoodItemRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */; };
 		673A051D278BF676008A2EE1 /* FoodItemRecommendationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */; };
+		673A0520278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A051E278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift */; };
+		673A0521278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A051F278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib */; };
 		67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1027732E3300B0C469 /* FoodRecordCell.swift */; };
 		67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1127732E3300B0C469 /* FoodRecordCell.xib */; };
 		67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1427732F7100B0C469 /* CompostTableCell.swift */; };
@@ -115,6 +117,8 @@
 		673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCompostDetail.swift; sourceTree = "<group>"; };
 		673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemRecommendationCell.swift; sourceTree = "<group>"; };
 		673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemRecommendationCell.xib; sourceTree = "<group>"; };
+		673A051E278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionCell.swift; sourceTree = "<group>"; };
+		673A051F278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCollectionCell.xib; sourceTree = "<group>"; };
 		67F09F1027732E3300B0C469 /* FoodRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordCell.swift; sourceTree = "<group>"; };
 		67F09F1127732E3300B0C469 /* FoodRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordCell.xib; sourceTree = "<group>"; };
 		67F09F1427732F7100B0C469 /* CompostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTableCell.swift; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 				67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */,
 				673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */,
 				673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */,
+				673A051E278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift */,
+				673A051F278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				67285C8B27845E40009108D7 /* CompostForm.storyboard in Resources */,
 				67F35B4F276AE2480068985B /* Assets.xcassets in Resources */,
 				67285C8827845E12009108D7 /* FoodForm.storyboard in Resources */,
+				673A0521278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib in Resources */,
 				67285C9B27845FAC009108D7 /* ArticleDetail.storyboard in Resources */,
 				67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */,
 				67285C9027845E8F009108D7 /* RootTabBar.storyboard in Resources */,
@@ -531,6 +538,7 @@
 				67F09F232773309800B0C469 /* UIButton+Extension.swift in Sources */,
 				67285C772782B77B009108D7 /* UIDevice+Extension.swift in Sources */,
 				67F35B43276AE2470068985B /* AppDelegate.swift in Sources */,
+				673A0520278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift in Sources */,
 				67285C752782B76D009108D7 /* UIPageView+Extension.swift in Sources */,
 				67285C692782B715009108D7 /* UIColor+Extension.swift in Sources */,
 				67285C712782B74D009108D7 /* UIViewController+Extension.swift in Sources */,

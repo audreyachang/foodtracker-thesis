@@ -14,6 +14,7 @@ class FoodItemRecommendationCell: UICollectionViewCell {
     @IBOutlet weak var foodItemLabel: UILabel!
     @IBOutlet weak var foodQtyLabel: UILabel!
     @IBOutlet weak var expirationDateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
