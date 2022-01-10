@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="1755.7971014492755" y="83.705357142857139"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ArticleList-->
         <scene sceneID="p3R-gw-8GM">
             <objects>
-                <viewControllerPlaceholder id="i4V-gE-XwL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ArticleList" id="i4V-gE-XwL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gXL-PR-teJ"/>
                     <navigationItem key="navigationItem" id="EaT-kH-4we"/>
                 </viewControllerPlaceholder>
@@ -45,6 +45,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3eY-WO-u39" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RRm-1a-EoP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
