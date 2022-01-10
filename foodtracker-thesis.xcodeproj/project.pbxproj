@@ -7,6 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671B634A27707018007CD051 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671B634927707018007CD051 /* CoreDataManager.swift */; };
+		671B634D27707135007CD051 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671B634C27707135007CD051 /* Constants.swift */; };
+		67285C692782B715009108D7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C682782B715009108D7 /* UIColor+Extension.swift */; };
+		67285C6B2782B720009108D7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C6A2782B720009108D7 /* UIImage+Extension.swift */; };
+		67285C6D2782B72F009108D7 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C6C2782B72F009108D7 /* UILabel+Extension.swift */; };
+		67285C6F2782B73C009108D7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C6E2782B73C009108D7 /* UIView+Extension.swift */; };
+		67285C712782B74D009108D7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C702782B74D009108D7 /* UIViewController+Extension.swift */; };
+		67285C732782B75D009108D7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C722782B75D009108D7 /* UIImageView+Extension.swift */; };
+		67285C752782B76D009108D7 /* UIPageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C742782B76D009108D7 /* UIPageView+Extension.swift */; };
+		67285C772782B77B009108D7 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C762782B77B009108D7 /* UIDevice+Extension.swift */; };
+		67285C7B2782BA98009108D7 /* FoodTracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C7A2782BA98009108D7 /* FoodTracker.storyboard */; };
+		67285C7D2782BAB8009108D7 /* FoodTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C7C2782BAB8009108D7 /* FoodTrackerViewController.swift */; };
+		67285C7F27845DB9009108D7 /* CompostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C7E27845DB9009108D7 /* CompostList.storyboard */; };
+		67285C8127845DC6009108D7 /* CompostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C8027845DC6009108D7 /* CompostListViewController.swift */; };
+		67285C8427845DF8009108D7 /* FoodFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C8327845DF8009108D7 /* FoodFormViewController.swift */; };
+		67285C8827845E12009108D7 /* FoodForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C8727845E12009108D7 /* FoodForm.storyboard */; };
+		67285C8B27845E40009108D7 /* CompostForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C8A27845E40009108D7 /* CompostForm.storyboard */; };
+		67285C8D27845E4F009108D7 /* CompostFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C8C27845E4F009108D7 /* CompostFormViewController.swift */; };
+		67285C9027845E8F009108D7 /* RootTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C8F27845E8F009108D7 /* RootTabBar.storyboard */; };
+		67285C9327845F62009108D7 /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C9227845F62009108D7 /* ArticleList.storyboard */; };
+		67285C9527845F6D009108D7 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C9427845F6D009108D7 /* ArticleListViewController.swift */; };
+		67285C9927845FA1009108D7 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C9827845FA1009108D7 /* ArticleDetailViewController.swift */; };
+		67285C9B27845FAC009108D7 /* ArticleDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67285C9A27845FAC009108D7 /* ArticleDetail.storyboard */; };
+		673A0502278BE14B008A2EE1 /* FoodItemRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0500278BE14B008A2EE1 /* FoodItemRecommendCell.swift */; };
+		673A0503278BE14B008A2EE1 /* FoodItemRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A0501278BE14B008A2EE1 /* FoodItemRecommendCell.xib */; };
+		673A0507278BE20C008A2EE1 /* PreloadFoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0506278BE20C008A2EE1 /* PreloadFoodData.swift */; };
+		673A0509278BE24F008A2EE1 /* FoodDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0508278BE24F008A2EE1 /* FoodDataRepository.swift */; };
+		673A050B278BE38E008A2EE1 /* FoodCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A050A278BE38E008A2EE1 /* FoodCategoryRepository.swift */; };
+		673A050D278BE9DA008A2EE1 /* CompostDataRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A050C278BE9DA008A2EE1 /* CompostDataRepsitory.swift */; };
+		673A050F278BEA34008A2EE1 /* CompostDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A050E278BEA34008A2EE1 /* CompostDetailRepository.swift */; };
+		673A0511278BEA44008A2EE1 /* PreloadFoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0510278BEA44008A2EE1 /* PreloadFoodCategory.swift */; };
+		673A0513278BEA54008A2EE1 /* PreloadCompostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0512278BEA54008A2EE1 /* PreloadCompostData.swift */; };
+		673A0515278BEA62008A2EE1 /* PreloadCompostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */; };
+		67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1027732E3300B0C469 /* FoodRecordCell.swift */; };
+		67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1127732E3300B0C469 /* FoodRecordCell.xib */; };
+		67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1427732F7100B0C469 /* CompostTableCell.swift */; };
+		67F09F1727732F7100B0C469 /* CompostTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1527732F7100B0C469 /* CompostTableCell.xib */; };
+		67F09F1C27732FC700B0C469 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */; };
+		67F09F1D27732FC700B0C469 /* FoodCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */; };
+		67F09F212773307200B0C469 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F202773307200B0C469 /* Date+Extension.swift */; };
+		67F09F232773309800B0C469 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F222773309800B0C469 /* UIButton+Extension.swift */; };
+		67F09F262773311D00B0C469 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F252773311D00B0C469 /* Int+Extension.swift */; };
+		67F09F282773312C00B0C469 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F272773312C00B0C469 /* String+Extension.swift */; };
+		67F09F2A2773313D00B0C469 /* TableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F292773313D00B0C469 /* TableViewCell+Extension.swift */; };
+		67F09F2C2773314A00B0C469 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F2B2773314A00B0C469 /* Cell+Extension.swift */; };
 		67F35B43276AE2470068985B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35B42276AE2470068985B /* AppDelegate.swift */; };
 		67F35B45276AE2470068985B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35B44276AE2470068985B /* SceneDelegate.swift */; };
 		67F35B47276AE2470068985B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35B46276AE2470068985B /* ViewController.swift */; };
@@ -37,6 +82,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		671B634927707018007CD051 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		671B634C27707135007CD051 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		67285C682782B715009108D7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		67285C6A2782B720009108D7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		67285C6C2782B72F009108D7 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		67285C6E2782B73C009108D7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		67285C702782B74D009108D7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		67285C722782B75D009108D7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		67285C742782B76D009108D7 /* UIPageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageView+Extension.swift"; sourceTree = "<group>"; };
+		67285C762782B77B009108D7 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		67285C7A2782BA98009108D7 /* FoodTracker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodTracker.storyboard; sourceTree = "<group>"; };
+		67285C7C2782BAB8009108D7 /* FoodTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerViewController.swift; sourceTree = "<group>"; };
+		67285C7E27845DB9009108D7 /* CompostList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompostList.storyboard; sourceTree = "<group>"; };
+		67285C8027845DC6009108D7 /* CompostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostListViewController.swift; sourceTree = "<group>"; };
+		67285C8327845DF8009108D7 /* FoodFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFormViewController.swift; sourceTree = "<group>"; };
+		67285C8727845E12009108D7 /* FoodForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodForm.storyboard; sourceTree = "<group>"; };
+		67285C8A27845E40009108D7 /* CompostForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompostForm.storyboard; sourceTree = "<group>"; };
+		67285C8C27845E4F009108D7 /* CompostFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostFormViewController.swift; sourceTree = "<group>"; };
+		67285C8F27845E8F009108D7 /* RootTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBar.storyboard; sourceTree = "<group>"; };
+		67285C9227845F62009108D7 /* ArticleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleList.storyboard; sourceTree = "<group>"; };
+		67285C9427845F6D009108D7 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		67285C9827845FA1009108D7 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		67285C9A27845FAC009108D7 /* ArticleDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetail.storyboard; sourceTree = "<group>"; };
+		673A0500278BE14B008A2EE1 /* FoodItemRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemRecommendCell.swift; sourceTree = "<group>"; };
+		673A0501278BE14B008A2EE1 /* FoodItemRecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemRecommendCell.xib; sourceTree = "<group>"; };
+		673A0506278BE20C008A2EE1 /* PreloadFoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadFoodData.swift; sourceTree = "<group>"; };
+		673A0508278BE24F008A2EE1 /* FoodDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataRepository.swift; sourceTree = "<group>"; };
+		673A050A278BE38E008A2EE1 /* FoodCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryRepository.swift; sourceTree = "<group>"; };
+		673A050C278BE9DA008A2EE1 /* CompostDataRepsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostDataRepsitory.swift; sourceTree = "<group>"; };
+		673A050E278BEA34008A2EE1 /* CompostDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostDetailRepository.swift; sourceTree = "<group>"; };
+		673A0510278BEA44008A2EE1 /* PreloadFoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadFoodCategory.swift; sourceTree = "<group>"; };
+		673A0512278BEA54008A2EE1 /* PreloadCompostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCompostData.swift; sourceTree = "<group>"; };
+		673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCompostDetail.swift; sourceTree = "<group>"; };
+		67F09F1027732E3300B0C469 /* FoodRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordCell.swift; sourceTree = "<group>"; };
+		67F09F1127732E3300B0C469 /* FoodRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordCell.xib; sourceTree = "<group>"; };
+		67F09F1427732F7100B0C469 /* CompostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTableCell.swift; sourceTree = "<group>"; };
+		67F09F1527732F7100B0C469 /* CompostTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompostTableCell.xib; sourceTree = "<group>"; };
+		67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
+		67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCell.xib; sourceTree = "<group>"; };
+		67F09F202773307200B0C469 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		67F09F222773309800B0C469 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		67F09F252773311D00B0C469 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		67F09F272773312C00B0C469 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		67F09F292773313D00B0C469 /* TableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		67F09F2B2773314A00B0C469 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 		67F35B3F276AE2470068985B /* foodtracker-thesis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "foodtracker-thesis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F35B42276AE2470068985B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F35B44276AE2470068985B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +168,149 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671B634627706FB3007CD051 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				67F35B4B276AE2470068985B /* foodtracker_thesis.xcdatamodeld */,
+				671B634927707018007CD051 /* CoreDataManager.swift */,
+				671B634827706FEF007CD051 /* Mock Data */,
+				671B634727706FC9007CD051 /* Repository */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		671B634727706FC9007CD051 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				673A0508278BE24F008A2EE1 /* FoodDataRepository.swift */,
+				673A050A278BE38E008A2EE1 /* FoodCategoryRepository.swift */,
+				673A050C278BE9DA008A2EE1 /* CompostDataRepsitory.swift */,
+				673A050E278BEA34008A2EE1 /* CompostDetailRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		671B634827706FEF007CD051 /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				673A0506278BE20C008A2EE1 /* PreloadFoodData.swift */,
+				673A0510278BEA44008A2EE1 /* PreloadFoodCategory.swift */,
+				673A0512278BEA54008A2EE1 /* PreloadCompostData.swift */,
+				673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */,
+			);
+			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		671B634B27707126007CD051 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67F09F242773310400B0C469 /* Extensions */,
+				671B634C27707135007CD051 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		67285C782782BA59009108D7 /* FoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				67285C8227845DE4009108D7 /* FoodItemForm */,
+				67285C7A2782BA98009108D7 /* FoodTracker.storyboard */,
+				67285C7C2782BAB8009108D7 /* FoodTrackerViewController.swift */,
+			);
+			path = FoodTracker;
+			sourceTree = "<group>";
+		};
+		67285C792782BA68009108D7 /* Compost */ = {
+			isa = PBXGroup;
+			children = (
+				67285C8927845E2D009108D7 /* CompostForm */,
+				67285C7E27845DB9009108D7 /* CompostList.storyboard */,
+				67285C8027845DC6009108D7 /* CompostListViewController.swift */,
+			);
+			path = Compost;
+			sourceTree = "<group>";
+		};
+		67285C8227845DE4009108D7 /* FoodItemForm */ = {
+			isa = PBXGroup;
+			children = (
+				67285C8327845DF8009108D7 /* FoodFormViewController.swift */,
+				67285C8727845E12009108D7 /* FoodForm.storyboard */,
+			);
+			path = FoodItemForm;
+			sourceTree = "<group>";
+		};
+		67285C8927845E2D009108D7 /* CompostForm */ = {
+			isa = PBXGroup;
+			children = (
+				67285C8A27845E40009108D7 /* CompostForm.storyboard */,
+				67285C8C27845E4F009108D7 /* CompostFormViewController.swift */,
+			);
+			path = CompostForm;
+			sourceTree = "<group>";
+		};
+		67285C8E27845E79009108D7 /* RootTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				67285C8F27845E8F009108D7 /* RootTabBar.storyboard */,
+			);
+			path = RootTabBar;
+			sourceTree = "<group>";
+		};
+		67285C9127845F52009108D7 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				67285C9627845F81009108D7 /* ArticleDetail */,
+				67285C9227845F62009108D7 /* ArticleList.storyboard */,
+				67285C9427845F6D009108D7 /* ArticleListViewController.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		67285C9627845F81009108D7 /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				67285C9827845FA1009108D7 /* ArticleDetailViewController.swift */,
+				67285C9A27845FAC009108D7 /* ArticleDetail.storyboard */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
+		67F09F0F27732E0500B0C469 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				67F09F1027732E3300B0C469 /* FoodRecordCell.swift */,
+				67F09F1127732E3300B0C469 /* FoodRecordCell.xib */,
+				67F09F1427732F7100B0C469 /* CompostTableCell.swift */,
+				67F09F1527732F7100B0C469 /* CompostTableCell.xib */,
+				67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */,
+				67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */,
+				673A0500278BE14B008A2EE1 /* FoodItemRecommendCell.swift */,
+				673A0501278BE14B008A2EE1 /* FoodItemRecommendCell.xib */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		67F09F242773310400B0C469 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67F09F222773309800B0C469 /* UIButton+Extension.swift */,
+				67F09F202773307200B0C469 /* Date+Extension.swift */,
+				67F09F252773311D00B0C469 /* Int+Extension.swift */,
+				67F09F272773312C00B0C469 /* String+Extension.swift */,
+				67F09F292773313D00B0C469 /* TableViewCell+Extension.swift */,
+				67F09F2B2773314A00B0C469 /* Cell+Extension.swift */,
+				67285C682782B715009108D7 /* UIColor+Extension.swift */,
+				67285C6A2782B720009108D7 /* UIImage+Extension.swift */,
+				67285C6C2782B72F009108D7 /* UILabel+Extension.swift */,
+				67285C6E2782B73C009108D7 /* UIView+Extension.swift */,
+				67285C702782B74D009108D7 /* UIViewController+Extension.swift */,
+				67285C722782B75D009108D7 /* UIImageView+Extension.swift */,
+				67285C742782B76D009108D7 /* UIPageView+Extension.swift */,
+				67285C762782B77B009108D7 /* UIDevice+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		67F35B36276AE2460068985B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +334,8 @@
 		67F35B41276AE2470068985B /* foodtracker-thesis */ = {
 			isa = PBXGroup;
 			children = (
+				671B634B27707126007CD051 /* Helpers */,
+				67F35B75276B29B30068985B /* Displays */,
 				67F35B42276AE2470068985B /* AppDelegate.swift */,
 				67F35B44276AE2470068985B /* SceneDelegate.swift */,
 				67F35B46276AE2470068985B /* ViewController.swift */,
@@ -108,7 +343,7 @@
 				67F35B4E276AE2480068985B /* Assets.xcassets */,
 				67F35B50276AE2480068985B /* LaunchScreen.storyboard */,
 				67F35B53276AE2480068985B /* Info.plist */,
-				67F35B4B276AE2470068985B /* foodtracker_thesis.xcdatamodeld */,
+				671B634627706FB3007CD051 /* Core */,
 			);
 			path = "foodtracker-thesis";
 			sourceTree = "<group>";
@@ -128,6 +363,18 @@
 				67F35B68276AE2490068985B /* foodtracker_thesisUITestsLaunchTests.swift */,
 			);
 			path = "foodtracker-thesisUITests";
+			sourceTree = "<group>";
+		};
+		67F35B75276B29B30068985B /* Displays */ = {
+			isa = PBXGroup;
+			children = (
+				67285C9127845F52009108D7 /* Article */,
+				67285C8E27845E79009108D7 /* RootTabBar */,
+				67285C782782BA59009108D7 /* FoodTracker */,
+				67285C792782BA68009108D7 /* Compost */,
+				67F09F0F27732E0500B0C469 /* CustomComponents */,
+			);
+			path = Displays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +482,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F35B52276AE2480068985B /* LaunchScreen.storyboard in Resources */,
+				673A0503278BE14B008A2EE1 /* FoodItemRecommendCell.xib in Resources */,
+				67285C9327845F62009108D7 /* ArticleList.storyboard in Resources */,
+				67F09F1727732F7100B0C469 /* CompostTableCell.xib in Resources */,
+				67285C8B27845E40009108D7 /* CompostForm.storyboard in Resources */,
 				67F35B4F276AE2480068985B /* Assets.xcassets in Resources */,
+				67285C8827845E12009108D7 /* FoodForm.storyboard in Resources */,
+				67285C9B27845FAC009108D7 /* ArticleDetail.storyboard in Resources */,
+				67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */,
+				67285C9027845E8F009108D7 /* RootTabBar.storyboard in Resources */,
+				67285C7B2782BA98009108D7 /* FoodTracker.storyboard in Resources */,
 				67F35B4A276AE2470068985B /* Main.storyboard in Resources */,
+				67285C7F27845DB9009108D7 /* CompostList.storyboard in Resources */,
+				67F09F1D27732FC700B0C469 /* FoodCategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +520,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F35B47276AE2470068985B /* ViewController.swift in Sources */,
+				673A050B278BE38E008A2EE1 /* FoodCategoryRepository.swift in Sources */,
+				673A0502278BE14B008A2EE1 /* FoodItemRecommendCell.swift in Sources */,
+				67F09F2C2773314A00B0C469 /* Cell+Extension.swift in Sources */,
+				67F09F2A2773313D00B0C469 /* TableViewCell+Extension.swift in Sources */,
+				67F09F212773307200B0C469 /* Date+Extension.swift in Sources */,
+				67285C8427845DF8009108D7 /* FoodFormViewController.swift in Sources */,
+				67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */,
+				67285C7D2782BAB8009108D7 /* FoodTrackerViewController.swift in Sources */,
+				67F09F232773309800B0C469 /* UIButton+Extension.swift in Sources */,
+				67285C772782B77B009108D7 /* UIDevice+Extension.swift in Sources */,
 				67F35B43276AE2470068985B /* AppDelegate.swift in Sources */,
+				67285C752782B76D009108D7 /* UIPageView+Extension.swift in Sources */,
+				67285C692782B715009108D7 /* UIColor+Extension.swift in Sources */,
+				67285C712782B74D009108D7 /* UIViewController+Extension.swift in Sources */,
+				67285C9527845F6D009108D7 /* ArticleListViewController.swift in Sources */,
+				67285C732782B75D009108D7 /* UIImageView+Extension.swift in Sources */,
+				67285C8D27845E4F009108D7 /* CompostFormViewController.swift in Sources */,
+				673A0507278BE20C008A2EE1 /* PreloadFoodData.swift in Sources */,
+				673A0513278BEA54008A2EE1 /* PreloadCompostData.swift in Sources */,
+				67285C6D2782B72F009108D7 /* UILabel+Extension.swift in Sources */,
+				67F09F1C27732FC700B0C469 /* FoodCategoryCell.swift in Sources */,
+				673A0511278BEA44008A2EE1 /* PreloadFoodCategory.swift in Sources */,
+				673A050D278BE9DA008A2EE1 /* CompostDataRepsitory.swift in Sources */,
+				67F09F282773312C00B0C469 /* String+Extension.swift in Sources */,
+				673A0509278BE24F008A2EE1 /* FoodDataRepository.swift in Sources */,
+				673A0515278BEA62008A2EE1 /* PreloadCompostDetail.swift in Sources */,
+				67285C8127845DC6009108D7 /* CompostListViewController.swift in Sources */,
 				67F35B4D276AE2470068985B /* foodtracker_thesis.xcdatamodeld in Sources */,
+				67285C6F2782B73C009108D7 /* UIView+Extension.swift in Sources */,
+				671B634A27707018007CD051 /* CoreDataManager.swift in Sources */,
+				67285C9927845FA1009108D7 /* ArticleDetailViewController.swift in Sources */,
+				67285C6B2782B720009108D7 /* UIImage+Extension.swift in Sources */,
 				67F35B45276AE2470068985B /* SceneDelegate.swift in Sources */,
+				67F09F262773311D00B0C469 /* Int+Extension.swift in Sources */,
+				67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */,
+				673A050F278BEA34008A2EE1 /* CompostDetailRepository.swift in Sources */,
+				671B634D27707135007CD051 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
