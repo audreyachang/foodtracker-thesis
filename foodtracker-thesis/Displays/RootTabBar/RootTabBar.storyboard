@@ -3,41 +3,101 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="sez-8I-YWi">
+            <objects>
+                <navigationController id="F3l-Ri-xio" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="bag.fill" catalog="system" landscapeImage="bag.fill" selectedImage="bag.fill" id="KnT-Dy-rZ2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bvA-uK-cEh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jpd-sP-Bwd" kind="relationship" relationship="rootViewController" id="hEQ-Va-Snk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMA-Ue-Al7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="-293"/>
+        </scene>
         <!--FoodTracker-->
         <scene sceneID="5an-7A-UUu">
             <objects>
                 <viewControllerPlaceholder storyboardName="FoodTracker" id="jpd-sP-Bwd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9Ok-Iq-yei"/>
+                    <tabBarItem key="tabBarItem" title="Item" landscapeImage="bag.fill" catalog="system" largeContentSizeImage="bag.fill" selectedImage="bag.fill" id="9Ok-Iq-yei">
+                        <imageReference key="image" image="bag.fill" catalog="system" symbolScale="default"/>
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="YzY-if-kEJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Siz-zt-24a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755.7971014492755" y="-221.65178571428569"/>
+            <point key="canvasLocation" x="2632" y="-293"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="dkU-8I-Abt">
+            <objects>
+                <navigationController id="98P-aI-u6W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="leaf.fill" catalog="system" landscapeImage="leaf.fill" selectedImage="leaf.fill" id="Lf8-kV-8nP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ii9-b3-VCK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w8Y-i9-jwe" kind="relationship" relationship="rootViewController" id="XBA-z8-I3z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7E0-LI-Kwj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="416"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="oIN-ng-kK2">
+            <objects>
+                <navigationController id="v0n-fj-evk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="book.fill" catalog="system" landscapeImage="book.fill" selectedImage="book.fill" id="zb2-ze-FAi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2q-UO-o0A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i4V-gE-XwL" kind="relationship" relationship="rootViewController" id="Eo6-aT-fyE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK2-m9-Uh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="1111"/>
         </scene>
         <!--CompostList-->
         <scene sceneID="g1W-aO-cF1">
             <objects>
                 <viewControllerPlaceholder storyboardName="CompostList" id="w8Y-i9-jwe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="b9x-76-GFN"/>
+                    <tabBarItem key="tabBarItem" title="Item" landscapeImage="leaf.fill" catalog="system" selectedImage="leaf.fill" id="b9x-76-GFN">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="1PB-0G-6DQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8S-l7-WAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755.7971014492755" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2631" y="416"/>
         </scene>
         <!--ArticleList-->
         <scene sceneID="p3R-gw-8GM">
             <objects>
                 <viewControllerPlaceholder storyboardName="ArticleList" id="i4V-gE-XwL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gXL-PR-teJ"/>
+                    <tabBarItem key="tabBarItem" title="Item" landscapeImage="book.fill" catalog="system" selectedImage="book.fill" id="gXL-PR-teJ">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="EaT-kH-4we"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZxS-Vn-mSG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755.7971014492755" y="375"/>
+            <point key="canvasLocation" x="2633" y="1111"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yTd-lT-Ake">
@@ -47,12 +107,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RRm-1a-EoP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.11209484190000001" green="0.161493361" blue="0.3255093396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jpd-sP-Bwd" kind="relationship" relationship="viewControllers" id="b50-cF-nUi"/>
-                        <segue destination="w8Y-i9-jwe" kind="relationship" relationship="viewControllers" id="4LT-9G-OOy"/>
-                        <segue destination="i4V-gE-XwL" kind="relationship" relationship="viewControllers" id="TSS-Ay-4BK"/>
+                        <segue destination="F3l-Ri-xio" kind="relationship" relationship="viewControllers" id="aoB-XX-OIA"/>
+                        <segue destination="98P-aI-u6W" kind="relationship" relationship="viewControllers" id="YjA-nj-Xcq"/>
+                        <segue destination="v0n-fj-evk" kind="relationship" relationship="viewControllers" id="rek-iE-wVP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLZ-bD-WAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,4 +122,12 @@
             <point key="canvasLocation" x="701" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
