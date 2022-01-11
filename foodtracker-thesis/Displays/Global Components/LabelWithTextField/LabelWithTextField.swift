@@ -7,14 +7,30 @@
 
 import UIKit
 
+protocol LabelWithTextFieldDelegate: AnyObject{
+    func isTextFieldFilled(was: Bool)
+}
+
 class LabelWithTextField: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    weak var delegate: LabelWithTextFieldDelegate?
+    
+    func setUp(dlgt: LabelWithTextFieldDelegate){
+        self.delegate = dlgt
     }
-    */
-
+    
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        initWithNib()
+    }
+   
+    required init?(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)
+        initWithNib()
+        
+    }
+    
+    func initWithNib(){
+        
+    }
 }
