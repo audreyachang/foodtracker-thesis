@@ -9,6 +9,11 @@ import UIKit
 
 class FoodRecordCell: UITableViewCell {
 
+    @IBOutlet weak var foodItemName: UILabel!
+    @IBOutlet weak var foodItemQty: UILabel!
+    @IBOutlet weak var foodItemCategory: UILabel!
+    @IBOutlet weak var expirationDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

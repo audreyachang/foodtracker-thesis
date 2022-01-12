@@ -9,6 +9,11 @@ import UIKit
 
 class CompostTableCell: UITableViewCell {
 
+    @IBOutlet weak var compostProcess: UILabel!
+    @IBOutlet weak var compostName: UILabel!
+    @IBOutlet weak var compostPhase: UILabel!
+    @IBOutlet weak var phaseButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
