@@ -13,4 +13,55 @@ class CompostDataRepository{
     static let shared = CompostDataRepository()
     let entityName = CompostData.self.description()
     let context = CoreDataManager.sharedManager.persistentContainer.viewContext
+    
+    func createCompostData(compost_id: String, start_date: Date, completion_date: Date){
+        do{
+            let compostData = CompostData(context: context)
+            compostData.compostId = compost_id
+            compostData.startDate = start_date
+            compostData.completionDate = completion_date
+            
+            try context.save()
+        }catch let error as NSError{
+            print(error)
+        }
+    }
+    
+    func getAllCompostData()->[CompostData]?{
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
+        do{
+            let item = try context.fetch(fetchRequest)as? [CompostData]
+            return item
+        }catch let error as NSError{
+            print(error)
+        }
+        return []
+    }
+    
+    func getCompostDataById(compost_id: String)->CompostData?{
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
+        fetchRequest.predicate = NSPredicate(format: "compostId = '\(compost_id)'")
+        do{
+            let item = try context.fetch(fetchRequest) as? [CompostData]
+            return item?.first
+        }catch let error as NSError{
+            print(error)
+        }
+        return nil
+    }
+    
+    func updateCompostData(){
+        
+    }
+    
+    func deleteCompostData(data: CompostData) -> Bool{
+        do{
+            context.delete(data)
+            try context.save()
+            return true
+        }catch let error as NSError{
+            print(error)
+        }
+        return false
+    }
 }

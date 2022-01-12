@@ -14,8 +14,8 @@
         <attribute name="expireDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="foodId" optional="YES" attributeType="String"/>
         <attribute name="foodName" optional="YES" attributeType="String"/>
-        <attribute name="foodQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="foodTypeId" optional="YES" attributeType="String"/>
+        <attribute name="foodQuantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="foodTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="storeDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="foodCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodType" inverseName="foodItems" inverseEntity="FoodType"/>
     </entity>
