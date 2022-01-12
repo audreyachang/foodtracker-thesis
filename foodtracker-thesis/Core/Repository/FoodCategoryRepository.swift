@@ -25,7 +25,7 @@ class FoodCategoryRepository{
             foodCategory.foodTypeName = food_type_name
             foodCategory.wasteType = waste_type
             
-            try context.save()
+          try context.save()
             
         }
         catch let error as NSError{
