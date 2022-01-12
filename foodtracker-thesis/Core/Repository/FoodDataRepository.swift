@@ -32,7 +32,7 @@ class FoodDataRepository{
             foodData.foodQuantity = Int32(food_qty)
             
             if let foodItems = FoodCategoryRepository.shared.getFoodCategoryById(id: food_type_id){
-                foodData.foodTypeId = Int32(food_type_id)
+                foodData.foodTypeId = foodItems.foodTypeId
             }
             try context.save()
         }catch let error as NSError{
