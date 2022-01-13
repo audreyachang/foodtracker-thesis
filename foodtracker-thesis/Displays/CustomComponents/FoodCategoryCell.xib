@@ -10,34 +10,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCategoryCell" customModule="foodtracker_thesis" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCategoryCell" id="gTV-IL-0wX" customClass="FoodCategoryCell" customModule="foodtracker_thesis" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jz3-Vc-ZFM">
-                        <rect key="frame" x="0.0" y="0.0" width="178" height="190"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jz3-Vc-ZFM">
+                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtG-vj-zEc">
-                                <rect key="frame" x="8" y="0.0" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EtG-vj-zEc">
+                                <rect key="frame" x="12" y="0.0" width="64" height="64"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-WW-lRD">
-                                <rect key="frame" x="19" y="65" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-WW-lRD">
+                                <rect key="frame" x="2" y="66" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EtG-vj-zEc" firstAttribute="top" secondItem="jz3-Vc-ZFM" secondAttribute="top" id="0VF-g8-cFo"/>
+                            <constraint firstItem="EtG-vj-zEc" firstAttribute="centerX" secondItem="jz3-Vc-ZFM" secondAttribute="centerX" id="Gom-Zi-7Fk"/>
+                            <constraint firstItem="7OU-WW-lRD" firstAttribute="leading" secondItem="jz3-Vc-ZFM" secondAttribute="leading" constant="2" id="Qc7-Vr-ckW"/>
+                            <constraint firstItem="EtG-vj-zEc" firstAttribute="width" secondItem="jz3-Vc-ZFM" secondAttribute="width" multiplier="0.727273" id="X3Y-yQ-xVZ"/>
+                            <constraint firstItem="7OU-WW-lRD" firstAttribute="centerX" secondItem="EtG-vj-zEc" secondAttribute="centerX" id="cfk-F1-yZe"/>
+                            <constraint firstItem="EtG-vj-zEc" firstAttribute="height" secondItem="jz3-Vc-ZFM" secondAttribute="height" multiplier="0.727273" id="dN5-R1-VB5"/>
+                            <constraint firstAttribute="trailing" secondItem="7OU-WW-lRD" secondAttribute="trailing" constant="2" id="khe-sn-dWJ"/>
+                            <constraint firstItem="7OU-WW-lRD" firstAttribute="top" secondItem="EtG-vj-zEc" secondAttribute="bottom" constant="2" id="meI-YB-qPe"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jz3-Vc-ZFM" secondAttribute="trailing" id="9pC-Jz-dlq"/>
+                <constraint firstAttribute="bottom" secondItem="jz3-Vc-ZFM" secondAttribute="bottom" id="QE1-o4-Uhi"/>
+                <constraint firstItem="jz3-Vc-ZFM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WRZ-vt-nSk"/>
+                <constraint firstItem="jz3-Vc-ZFM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f7j-aw-HmX"/>
+            </constraints>
             <size key="customSize" width="178" height="190"/>
             <connections>
                 <outlet property="categoryImage" destination="EtG-vj-zEc" id="MVv-lF-2YQ"/>
