@@ -15,18 +15,6 @@ class FoodFormViewController: UIViewController {
         setup()
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 //MARK: Initial Setup
@@ -54,6 +42,16 @@ extension FoodFormViewController: UICollectionViewDelegate, UICollectionViewData
         return cell
     }
     
- 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = foodCategoryCollection.cellForItem(at: indexPath)as? FoodCategoryCollectionCell{
+            cell.foodCategoryContentView.backgroundColor = .lightGray
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = foodCategoryCollection.cellForItem(at: indexPath)as? FoodCategoryCollectionCell{
+            cell.foodCategoryContentView.backgroundColor = .white
+        }
+    }
 }
 
