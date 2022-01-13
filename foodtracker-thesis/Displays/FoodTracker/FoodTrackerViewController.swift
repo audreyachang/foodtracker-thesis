@@ -26,23 +26,16 @@ class FoodTrackerViewController: UIViewController {
         setup()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        setup()
     }
-    */
-
 }
 
 //MARK: Initial Setup
 extension FoodTrackerViewController{
     func setup(){
         self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.tabBarController?.tabBar.isHidden = false
         foodCategoryLabel.text = "Food Categories"
         foodRecommendLabel.text = "Food Item Recommendation"
         foodItemLabel.text = "Food Records"

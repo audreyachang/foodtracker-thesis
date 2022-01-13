@@ -115,7 +115,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system"/>
                             </button>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="SDl-9s-4ze">
-                                <rect key="frame" x="20" y="50" width="310" height="51"/>
+                                <rect key="frame" x="20" y="50" width="309.5" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
