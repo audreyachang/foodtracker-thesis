@@ -24,7 +24,9 @@ class FoodTrackerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        print(FoodCategoryRepository.shared.getAllFoodCategory()?.count)
+        if FoodCategoryRepository.shared.getAllFoodCategory()?.count == 0 {
+            preloadFoodCategory()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,6 +52,7 @@ extension FoodTrackerViewController{
 extension FoodTrackerViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.categoryCollectionView{
+            category = getAllCategory()
             return category.count
         }else{
             return 2
@@ -59,6 +62,7 @@ extension FoodTrackerViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.categoryCollectionView{
             let categoryCell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "FoodCategoryCell", for: indexPath)as! FoodCategoryCell
+            categoryCell.categoryName.text = category[indexPath.row].foodTypeName
             return categoryCell
         }else{
             let foodRecommCell = recommendCollectionView.dequeueReusableCell(withReuseIdentifier: "FoodItemRecommendationCell", for: indexPath)as! FoodItemRecommendationCell
@@ -93,7 +97,7 @@ extension FoodTrackerViewController{
     }
     
     func getAllCategory()->[FoodType]{
-        guard let data = FoodCategoryRepository.shared.getAllFoodCategory() else {
+        guard let data = FoodCategoryRepository.shared.getAllFoodCategory() else{
             return [FoodType]()
         }
         return data

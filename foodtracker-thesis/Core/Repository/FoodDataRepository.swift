@@ -21,7 +21,7 @@ class FoodDataRepository{
         store_date: Date,
         expire_date: Date,
         food_qty: Int
-    ){
+    )-> Bool{
         do{
           let foodData = FoodData(context: context)
             foodData.foodId = food_id
@@ -35,9 +35,11 @@ class FoodDataRepository{
                 foodData.foodTypeId = foodItems.foodTypeId
             }
             try context.save()
+            return true
         }catch let error as NSError{
             print(error)
         }
+        return false
     }
     
     func getAllFoodItem() -> [FoodData]?{
