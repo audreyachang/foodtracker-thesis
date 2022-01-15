@@ -10,9 +10,15 @@ import UIKit
 class FoodFormViewController: UIViewController {
 
     @IBOutlet weak var foodCategoryCollection: UICollectionView!
+    
+    var category = [FoodType]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        if FoodCategoryRepository.shared.getAllFoodCategory()?.count == 0{
+            preloadFoodCategory()
+        }
         // Do any additional setup after loading the view.
     }
 }
@@ -33,12 +39,13 @@ extension FoodFormViewController{
 //MARK: CollectionViewDelegate
 extension FoodFormViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        category = getAllCategory()
+        return category.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = foodCategoryCollection.dequeueReusableCell(withReuseIdentifier: "FoodCategoryCollectionCell", for: indexPath)as! FoodCategoryCollectionCell
-        cell.selectedBackgroundView?.backgroundColor = .blue
+        cell.categoryName.text = category[indexPath.row].foodTypeName
         return cell
     }
     
@@ -52,6 +59,19 @@ extension FoodFormViewController: UICollectionViewDelegate, UICollectionViewData
         if let cell = foodCategoryCollection.cellForItem(at: indexPath)as? FoodCategoryCollectionCell{
             cell.foodCategoryContentView.backgroundColor = .white
         }
+    }
+}
+
+//MARK: CoreData
+extension FoodFormViewController{
+    func getInitialData(){
+    }
+    
+    func getAllCategory()->[FoodType]{
+        guard let data = FoodCategoryRepository.shared.getAllFoodCategory() else{
+            return [FoodType]()
+        }
+        return data
     }
 }
 

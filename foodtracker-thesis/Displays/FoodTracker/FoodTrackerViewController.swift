@@ -24,6 +24,7 @@ class FoodTrackerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        print(FoodCategoryRepository.shared.getAllFoodCategory()?.count)
     }
     
     override func viewWillAppear(_ animated: Bool) {

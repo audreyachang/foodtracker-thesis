@@ -24,7 +24,6 @@ class FoodCategoryRepository{
             foodCategory.foodTypeId = Int32(food_type_id)
             foodCategory.foodTypeName = food_type_name
             foodCategory.wasteType = waste_type
-            
           try context.save()
             
         }

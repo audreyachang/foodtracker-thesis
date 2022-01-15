@@ -70,8 +70,21 @@ class CoreDataManager {
                 print("\(error)")
             }
         }
-        //MARK: add preload data here
+        preloadData()
     }
     
+}
+
+extension CoreDataManager{
+    func resetData(){
+        CoreDataManager.sharedManager.deleteAllData()
+        preloadData()
+    }
     
+    func preloadData(){
+        if FoodCategoryRepository.shared.getAllFoodCategory()?.count == 0 {
+            preloadFoodCategory()
+            print("Preloading food category")
+        }
+    }
 }
