@@ -15,9 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="113" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-sv-to3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="YHN-bx-HfR"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="hVt-bS-Ziw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8dR-sv-to3" secondAttribute="trailing" id="323-w5-5h6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8dR-sv-to3" secondAttribute="bottom" id="AYX-Gt-BUr"/>
+                            <constraint firstItem="8dR-sv-to3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Bra-RU-HwI"/>
+                            <constraint firstItem="8dR-sv-to3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qiG-G5-Pep"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="articleListTable" destination="8dR-sv-to3" id="Ylm-Vt-jje"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

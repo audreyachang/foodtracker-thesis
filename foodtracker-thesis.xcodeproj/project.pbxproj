@@ -46,6 +46,8 @@
 		673A0526278C533E008A2EE1 /* LabelWithTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A0525278C533E008A2EE1 /* LabelWithTextField.xib */; };
 		673A052A278C536B008A2EE1 /* LabelWithDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A0529278C536B008A2EE1 /* LabelWithDate.swift */; };
 		673A052C278C5377008A2EE1 /* LabelWithDate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A052B278C5377008A2EE1 /* LabelWithDate.xib */; };
+		67461DD727945B87005BFFD8 /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67461DD527945B87005BFFD8 /* ArticleListCell.swift */; };
+		67461DD827945B87005BFFD8 /* ArticleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67461DD627945B87005BFFD8 /* ArticleListCell.xib */; };
 		67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1027732E3300B0C469 /* FoodRecordCell.swift */; };
 		67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1127732E3300B0C469 /* FoodRecordCell.xib */; };
 		67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1427732F7100B0C469 /* CompostTableCell.swift */; };
@@ -127,6 +129,8 @@
 		673A0525278C533E008A2EE1 /* LabelWithTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWithTextField.xib; sourceTree = "<group>"; };
 		673A0529278C536B008A2EE1 /* LabelWithDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithDate.swift; sourceTree = "<group>"; };
 		673A052B278C5377008A2EE1 /* LabelWithDate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWithDate.xib; sourceTree = "<group>"; };
+		67461DD527945B87005BFFD8 /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
+		67461DD627945B87005BFFD8 /* ArticleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListCell.xib; sourceTree = "<group>"; };
 		67F09F1027732E3300B0C469 /* FoodRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordCell.swift; sourceTree = "<group>"; };
 		67F09F1127732E3300B0C469 /* FoodRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordCell.xib; sourceTree = "<group>"; };
 		67F09F1427732F7100B0C469 /* CompostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTableCell.swift; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 				673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */,
 				673A051E278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift */,
 				673A051F278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib */,
+				67461DD527945B87005BFFD8 /* ArticleListCell.swift */,
+				67461DD627945B87005BFFD8 /* ArticleListCell.xib */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -523,6 +529,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67461DD827945B87005BFFD8 /* ArticleListCell.xib in Resources */,
 				67F35B52276AE2480068985B /* LaunchScreen.storyboard in Resources */,
 				67285C9327845F62009108D7 /* ArticleList.storyboard in Resources */,
 				67F09F1727732F7100B0C469 /* CompostTableCell.xib in Resources */,
@@ -574,6 +581,7 @@
 				67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */,
 				673A0524278C532E008A2EE1 /* LabelWithTextField.swift in Sources */,
 				67285C7D2782BAB8009108D7 /* FoodTrackerViewController.swift in Sources */,
+				67461DD727945B87005BFFD8 /* ArticleListCell.swift in Sources */,
 				67F09F232773309800B0C469 /* UIButton+Extension.swift in Sources */,
 				67285C772782B77B009108D7 /* UIDevice+Extension.swift in Sources */,
 				67F35B43276AE2470068985B /* AppDelegate.swift in Sources */,
