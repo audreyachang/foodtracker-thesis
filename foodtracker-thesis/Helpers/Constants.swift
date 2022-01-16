@@ -9,5 +9,5 @@ import Foundation
 
 class Constants {
     static let APP_VERSION = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-    static let dataModel = "foodtracker-thesis"
+    static let dataModel = "foodtracker_thesis"
 }
