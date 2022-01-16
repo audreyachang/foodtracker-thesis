@@ -11,10 +11,8 @@ class FoodTrackerViewController: UIViewController {
 
     @IBOutlet weak var foodItemLabel: UILabel!
     @IBOutlet weak var foodRecommendLabel: UILabel!
-    @IBOutlet weak var foodCategoryLabel: UILabel!
     @IBOutlet weak var notifButton: UIButton!
-    @IBOutlet weak var recommendCollectionView: UICollectionView!
-    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    @IBOutlet weak var recommendCollectionView: UICollectionView! 
     @IBOutlet weak var addNewItemButton: UIButton!
     @IBOutlet weak var foodRecordTableView: UITableView!
     
@@ -39,11 +37,10 @@ extension FoodTrackerViewController{
     func setup(){
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.tabBarController?.tabBar.isHidden = false
-        foodCategoryLabel.text = "Food Categories"
         foodRecommendLabel.text = "Food Item Recommendation"
         foodItemLabel.text = "Food Records"
         recommendCollectionView.register(UINib(nibName: "FoodItemRecommendationCell", bundle: nil), forCellWithReuseIdentifier: "FoodItemRecommendationCell")
-        categoryCollectionView.register(UINib(nibName: "FoodCategoryCell", bundle: nil), forCellWithReuseIdentifier: "FoodCategoryCell")
+
         foodRecordTableView.register(UINib(nibName: "FoodRecordCell", bundle: nil), forCellReuseIdentifier: "FoodRecordCell")
     }
 }
@@ -51,23 +48,13 @@ extension FoodTrackerViewController{
 //MARK: Collection View Delegate
 extension FoodTrackerViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == self.categoryCollectionView{
-            category = getAllCategory()
-            return category.count
-        }else{
-            return 2
-        }
+       return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == self.categoryCollectionView{
-            let categoryCell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "FoodCategoryCell", for: indexPath)as! FoodCategoryCell
-            categoryCell.categoryName.text = category[indexPath.row].foodTypeName
-            return categoryCell
-        }else{
             let foodRecommCell = recommendCollectionView.dequeueReusableCell(withReuseIdentifier: "FoodItemRecommendationCell", for: indexPath)as! FoodItemRecommendationCell
             return foodRecommCell
-        }        
+              
     }
     
     
