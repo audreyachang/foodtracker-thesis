@@ -7,11 +7,10 @@
 
 import UIKit
 
-class FoodCategoryCell: UICollectionViewCell {
+class CompostCategoryCell: UICollectionViewCell {
 
-    @IBOutlet weak var categoryImage: UIImageView!
-    @IBOutlet weak var categoryName: UILabel!
-    
+    @IBOutlet weak var backgroudContentView: UIView!
+    @IBOutlet weak var contentLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

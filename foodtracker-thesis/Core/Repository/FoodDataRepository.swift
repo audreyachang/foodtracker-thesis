@@ -20,7 +20,8 @@ class FoodDataRepository{
         food_name: String,
         store_date: Date,
         expire_date: Date,
-        food_qty: Int
+        food_qty: Int,
+        measurement_type: String
     )-> Bool{
         do{
           let foodData = FoodData(context: context)
@@ -30,6 +31,7 @@ class FoodDataRepository{
             foodData.storeDate = store_date
             foodData.expireDate = expire_date
             foodData.foodQuantity = Int32(food_qty)
+            foodData.measurementType = measurement_type
             
             if let foodItems = FoodCategoryRepository.shared.getFoodCategoryById(id: food_type_id){
                 foodData.foodTypeId = foodItems.foodTypeId
@@ -66,16 +68,17 @@ class FoodDataRepository{
     }
     
     func updateFoodItem(food_id: String,
-                        food_type_id: String,
+                        food_type_id: Int,
                         newFoodName: String,
                         store_date: Date,
                         expire_date: Date,
                         newFoodQty: Int)->Bool{
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
-        fetchRequest.predicate = NSPredicate(format: "food_id = '\(food_id)'")
+        fetchRequest.predicate = NSPredicate(format: "foodId = '\(food_id)'")
         do{
             let item = try context.fetch(fetchRequest) as? [FoodData]
             let newFoodItem = item?.first
+            newFoodItem?.foodTypeId = Int32(food_type_id)
             newFoodItem?.foodName = newFoodName
             newFoodItem?.foodQuantity = Int32(newFoodQty)
             newFoodItem?.expireDate = expire_date

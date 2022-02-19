@@ -3,30 +3,127 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Compost Form View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="CompostFormViewController" customModule="foodtracker_thesis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goToCompostForm" id="Y6W-OH-hqX" customClass="CompostFormViewController" customModule="foodtracker_thesis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-Sn-H8g">
+                                <rect key="frame" x="10" y="95" width="394" height="50"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lrv-Gi-FOw"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="layoutMargins" id="WPA-8K-CPU">
+                                    <size key="itemSize" width="171" height="37"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uXB-BA-oJr">
+                                        <rect key="frame" x="8" y="8" width="171" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AUe-Cu-DD8">
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="XcG-Hq-WDS"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Wmb-aw-mvx"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVq-IV-6VI">
+                                <rect key="frame" x="20.5" y="792" width="373" height="50"/>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.38823529411764707" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P0b-7O-tAj"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addOrDeleteAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N0k-zC-3HL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gF-mO-0Ag">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4d-Ls-XgB" customClass="LabelWithTextField" customModule="foodtracker_thesis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="155" width="414" height="106"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="ayn-GN-AcH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XU3-0h-Ju8" customClass="LabelWithDate" customModule="foodtracker_thesis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="301" width="414" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2WA-rj-cxb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" name="orangeTint"/>
+                        <constraints>
+                            <constraint firstItem="s4d-Ls-XgB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8Mz-rV-IJv"/>
+                            <constraint firstItem="XU3-0h-Ju8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8iV-kS-J5v"/>
+                            <constraint firstItem="Zgf-Sn-H8g" firstAttribute="top" secondItem="9gF-mO-0Ag" secondAttribute="bottom" constant="10" id="D06-nQ-cse"/>
+                            <constraint firstItem="9gF-mO-0Ag" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="DHl-Kc-vCU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="s4d-Ls-XgB" secondAttribute="trailing" id="JOg-qF-kY2"/>
+                            <constraint firstItem="eVq-IV-6VI" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="JRi-GV-wTN"/>
+                            <constraint firstItem="s4d-Ls-XgB" firstAttribute="top" secondItem="Zgf-Sn-H8g" secondAttribute="bottom" constant="10" id="Kbf-ee-C0F"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eVq-IV-6VI" secondAttribute="bottom" constant="20" id="LWF-Jj-u6q"/>
+                            <constraint firstItem="s4d-Ls-XgB" firstAttribute="centerX" secondItem="Zgf-Sn-H8g" secondAttribute="centerX" id="aaw-Or-qvn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Zgf-Sn-H8g" secondAttribute="trailing" constant="10" id="bvK-FA-AQw"/>
+                            <constraint firstItem="Zgf-Sn-H8g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="dbT-wV-Q1z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XU3-0h-Ju8" secondAttribute="trailing" id="gmf-4y-tYI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9gF-mO-0Ag" secondAttribute="trailing" constant="20" id="mwV-BJ-8yT"/>
+                            <constraint firstItem="XU3-0h-Ju8" firstAttribute="top" secondItem="s4d-Ls-XgB" secondAttribute="bottom" constant="40" id="nNX-zL-422"/>
+                            <constraint firstItem="XU3-0h-Ju8" firstAttribute="centerX" secondItem="s4d-Ls-XgB" secondAttribute="centerX" id="oNc-sX-iyS"/>
+                            <constraint firstItem="9gF-mO-0Ag" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pOQ-rV-qGq"/>
+                            <constraint firstItem="eVq-IV-6VI" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="s7t-4n-bnC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addOrDeleteButton" destination="eVq-IV-6VI" id="iuz-DS-nuH"/>
+                        <outlet property="collectionTitleLabel" destination="9gF-mO-0Ag" id="dUt-X6-DWt"/>
+                        <outlet property="compostHarvestView" destination="XU3-0h-Ju8" id="90X-Rz-EPQ"/>
+                        <outlet property="compostNameView" destination="s4d-Ls-XgB" id="taG-kk-bpf"/>
+                        <outlet property="compostTypeCollection" destination="Zgf-Sn-H8g" id="g0t-cW-3D7"/>
+                        <segue destination="y3X-4Y-qhc" kind="unwind" identifier="backToCompostList" unwindAction="unwindToCompostList:" id="NAQ-RJ-vUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="y3X-4Y-qhc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="30" y="84"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="orangeTint">
+            <color red="0.8666666666666667" green="0.38823529411764707" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

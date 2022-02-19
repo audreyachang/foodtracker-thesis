@@ -9,7 +9,6 @@ import UIKit
 
 class LabelWithDate: UIView {
 
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBAction func datePickerWasPressed(_ sender: Any){
@@ -27,7 +26,6 @@ class LabelWithDate: UIView {
     
     convenience init(title: String, content: String, dateData: String?){
         self.init()
-        titleLabel.text = title
         contentLabel.text = content
     }
     

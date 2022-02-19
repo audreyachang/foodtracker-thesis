@@ -14,8 +14,12 @@ class CompostTableCell: UITableViewCell {
     @IBOutlet weak var compostPhase: UILabel!
     @IBOutlet weak var phaseButton: UIButton!
     
+    var editButtonAction : (()->())?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.phaseButton.addTarget(self, action: #selector(editButtonTapped(_:)), for: .touchUpInside)
+        self.phaseButton.layer.cornerRadius = 10
         // Initialization code
     }
 
@@ -25,4 +29,7 @@ class CompostTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func editButtonTapped(_ sender: UIButton) {
+        editButtonAction?()
+    }
 }

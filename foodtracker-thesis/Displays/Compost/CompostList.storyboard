@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +15,63 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ArI-nz-vm5">
+                                <rect key="frame" x="35.5" y="44" width="343" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="Compost"/>
+                                    <segment title="Ecoenzym"/>
+                                </segments>
+                                <color key="tintColor" name="creamTag"/>
+                                <color key="selectedSegmentTintColor" red="0.59215686270000001" green="0.74901960779999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-4J-0ab">
+                                <rect key="frame" x="0.0" y="83" width="414" height="779"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="3u6-Ul-Cph"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="3hV-cf-htw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zld-4J-0ab" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3Lb-V0-8bR"/>
+                            <constraint firstItem="ArI-nz-vm5" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.828502" id="4wH-hx-6eR"/>
+                            <constraint firstItem="Zld-4J-0ab" firstAttribute="top" secondItem="ArI-nz-vm5" secondAttribute="bottom" constant="8" id="8NF-nf-sG8"/>
+                            <constraint firstItem="ArI-nz-vm5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Gnt-7a-WGT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Zld-4J-0ab" secondAttribute="bottom" id="JEP-Td-K77"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Zld-4J-0ab" secondAttribute="trailing" id="NgL-fD-0ON"/>
+                            <constraint firstItem="ArI-nz-vm5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="aQL-nk-DFd"/>
+                            <constraint firstItem="Zld-4J-0ab" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="lp5-rP-BIC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="compostListTable" destination="Zld-4J-0ab" id="quw-By-fuS"/>
+                        <outlet property="compostSegmented" destination="ArI-nz-vm5" id="V8t-hI-cYf"/>
+                        <segue destination="r99-8n-A8z" kind="show" identifier="goToCompostForm" id="pGv-WS-sTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="30" y="84"/>
         </scene>
+        <!--CompostForm-->
+        <scene sceneID="rJg-A2-FLt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CompostForm" id="r99-8n-A8z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="M4j-xX-Xb2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1t7-HC-I09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="84"/>
+        </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="creamTag">
+            <color red="0.96078431372549022" green="0.93333333333333335" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

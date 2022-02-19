@@ -17,23 +17,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="115" height="37"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-aR-fvP">
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-aR-fvP">
                         <rect key="frame" x="0.0" y="0.0" width="115" height="37"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vza-kb-POW" customClass="DesignableButton" customModule="foodtracker_thesis" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vza-kb-POW" customClass="DesignableButton" customModule="foodtracker_thesis" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="115" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzy-E4-oX3">
-                                        <rect key="frame" x="36" y="8" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzy-E4-oX3">
+                                        <rect key="frame" x="5" y="10" width="105" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="nzF-eC-c1S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="DAo-GK-LH9"/>
+                                    <constraint firstAttribute="trailing" secondItem="yzy-E4-oX3" secondAttribute="trailing" constant="5" id="L5z-8e-NH5"/>
+                                    <constraint firstItem="yzy-E4-oX3" firstAttribute="centerY" secondItem="vza-kb-POW" secondAttribute="centerY" id="Mxy-GW-8fA"/>
+                                    <constraint firstItem="yzy-E4-oX3" firstAttribute="centerX" secondItem="vza-kb-POW" secondAttribute="centerX" id="Y75-Jv-hzJ"/>
+                                    <constraint firstItem="yzy-E4-oX3" firstAttribute="leading" secondItem="vza-kb-POW" secondAttribute="leading" constant="5" id="hMd-qN-wBI"/>
+                                    <constraint firstAttribute="width" constant="115" id="ptY-iJ-kUr"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="20"/>
@@ -48,10 +56,22 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vza-kb-POW" firstAttribute="top" secondItem="ebS-aR-fvP" secondAttribute="top" id="46F-KS-4Ne"/>
+                            <constraint firstItem="vza-kb-POW" firstAttribute="leading" secondItem="ebS-aR-fvP" secondAttribute="leading" id="Mzs-N5-xWJ"/>
+                            <constraint firstAttribute="bottom" secondItem="vza-kb-POW" secondAttribute="bottom" id="gUh-JE-mGe"/>
+                            <constraint firstAttribute="trailing" secondItem="vza-kb-POW" secondAttribute="trailing" id="ypv-NA-BPb"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ebS-aR-fvP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0DG-gT-qBW"/>
+                <constraint firstAttribute="trailing" secondItem="ebS-aR-fvP" secondAttribute="trailing" id="4u6-5e-ymh"/>
+                <constraint firstItem="ebS-aR-fvP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5Nv-tq-ow7"/>
+                <constraint firstAttribute="bottom" secondItem="ebS-aR-fvP" secondAttribute="bottom" id="fvN-eP-JJT"/>
+            </constraints>
             <size key="customSize" width="150" height="39"/>
             <connections>
                 <outlet property="categoryName" destination="yzy-E4-oX3" id="9P9-1R-pmY"/>

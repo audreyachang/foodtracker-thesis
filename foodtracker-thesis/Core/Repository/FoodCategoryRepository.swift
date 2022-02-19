@@ -17,19 +17,21 @@ class FoodCategoryRepository{
     func createFoodCategory(
         food_type_id: Int,
         food_type_name: String,
-        waste_type: String
+        waste_type_id: Int
     ){
         do{
             let foodCategory = FoodType(context: context)
             foodCategory.foodTypeId = Int32(food_type_id)
             foodCategory.foodTypeName = food_type_name
-            foodCategory.wasteType = waste_type
-          try context.save()
             
+            if let wasteTypes = WasteTypeRepository.shared.getWasteTypeById(id: waste_type_id){
+                foodCategory.wasteType = wasteTypes
+            }
+            try context.save()
         }
         catch let error as NSError{
             print(error)
-        }
+        }        
     }
 
     func getAllFoodCategory()->[FoodType]?{
@@ -55,14 +57,17 @@ class FoodCategoryRepository{
         return nil
     }
     
-    func updateFoodCategory(id: Int, newName: String, newWasteType: String){
+    func updateFoodCategory(id: Int, newName: String, newWasteType: Int){
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
         fetchRequest.predicate = NSPredicate(format: "foodTypeId == %d", id as CVarArg)
         do{
             let item = try context.fetch(fetchRequest) as? [FoodType]
             let foodType = item?.first
             foodType?.foodTypeName = newName
-            foodType?.wasteType = newWasteType
+            
+            if let newWasteTypes = WasteTypeRepository.shared.getWasteTypeById(id: newWasteType){
+                foodType?.wasteType = newWasteTypes
+            }
             
             try context.save()
         }catch let error as NSError{

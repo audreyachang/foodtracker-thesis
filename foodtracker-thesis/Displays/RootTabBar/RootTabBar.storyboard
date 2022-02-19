@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Food-->
         <scene sceneID="sez-8I-YWi">
             <objects>
                 <navigationController id="F3l-Ri-xio" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="bag.fill" catalog="system" landscapeImage="bag.fill" selectedImage="bag.fill" id="KnT-Dy-rZ2"/>
+                    <tabBarItem key="tabBarItem" title="Food" image="fork.knife" catalog="system" landscapeImage="fork.knife" selectedImage="fork.knife" id="KnT-Dy-rZ2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bvA-uK-cEh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -39,11 +39,11 @@
             </objects>
             <point key="canvasLocation" x="2632" y="-293"/>
         </scene>
-        <!--Item-->
+        <!--Compost-->
         <scene sceneID="dkU-8I-Abt">
             <objects>
                 <navigationController id="98P-aI-u6W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="leaf.fill" catalog="system" landscapeImage="leaf.fill" selectedImage="leaf.fill" id="Lf8-kV-8nP"/>
+                    <tabBarItem key="tabBarItem" title="Compost" image="leaf.arrow.triangle.circlepath" catalog="system" landscapeImage="leaf.arrow.triangle.circlepath" selectedImage="leaf.arrow.triangle.circlepath" id="Lf8-kV-8nP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ii9-b3-VCK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -56,11 +56,11 @@
             </objects>
             <point key="canvasLocation" x="1690" y="416"/>
         </scene>
-        <!--Item-->
+        <!--Article-->
         <scene sceneID="oIN-ng-kK2">
             <objects>
                 <navigationController id="v0n-fj-evk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="book.fill" catalog="system" landscapeImage="book.fill" selectedImage="book.fill" id="zb2-ze-FAi"/>
+                    <tabBarItem key="tabBarItem" title="Article" image="square.text.square" catalog="system" landscapeImage="square.text.square" selectedImage="square.text.square" id="zb2-ze-FAi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2q-UO-o0A">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -107,9 +107,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RRm-1a-EoP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.11209484190000001" green="0.161493361" blue="0.3255093396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.30980392156862746" green="0.035294117647058823" blue="0.11372549019607843" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.30980392156862746" green="0.035294117647058823" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="F3l-Ri-xio" kind="relationship" relationship="viewControllers" id="aoB-XX-OIA"/>
@@ -125,7 +125,10 @@
     <resources>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="fork.knife" catalog="system" width="92" height="128"/>
+        <image name="leaf.arrow.triangle.circlepath" catalog="system" width="121" height="128"/>
         <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <image name="square.text.square" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
