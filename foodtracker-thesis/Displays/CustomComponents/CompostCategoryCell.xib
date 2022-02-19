@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompostCategoryCell" id="gTV-IL-0wX" customClass="CompostCategoryCell" customModule="foodtracker_thesis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="37"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="37"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jz3-Vc-ZFM">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="37"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-g3-rPJ" customClass="DesignableButton" customModule="foodtracker_thesis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="171" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-WW-lRD">
+                                        <rect key="frame" x="10" y="8" width="151" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="6yZ-PZ-SNc"/>
+                                    <constraint firstAttribute="height" constant="37" id="D4Q-oO-H8x"/>
+                                    <constraint firstAttribute="trailing" secondItem="7OU-WW-lRD" secondAttribute="trailing" constant="10" id="EI1-Zy-aEZ"/>
+                                    <constraint firstItem="7OU-WW-lRD" firstAttribute="centerY" secondItem="EFE-g3-rPJ" secondAttribute="centerY" id="Rsj-ZJ-fLV"/>
+                                    <constraint firstItem="7OU-WW-lRD" firstAttribute="centerX" secondItem="EFE-g3-rPJ" secondAttribute="centerX" id="SHB-G4-9n7"/>
+                                    <constraint firstItem="7OU-WW-lRD" firstAttribute="leading" secondItem="EFE-g3-rPJ" secondAttribute="leading" constant="10" id="wyB-ea-bm0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EFE-g3-rPJ" secondAttribute="bottom" id="Azx-hu-aAb"/>
+                            <constraint firstItem="EFE-g3-rPJ" firstAttribute="leading" secondItem="jz3-Vc-ZFM" secondAttribute="leading" id="NLD-nC-W40"/>
+                            <constraint firstAttribute="trailing" secondItem="EFE-g3-rPJ" secondAttribute="trailing" id="cFc-yx-Zde"/>
+                            <constraint firstItem="EFE-g3-rPJ" firstAttribute="top" secondItem="jz3-Vc-ZFM" secondAttribute="top" id="kbL-Ug-90o"/>
+                            <constraint firstAttribute="width" constant="171" id="uMd-68-211"/>
+                            <constraint firstAttribute="height" constant="37" id="xi8-Ja-Dn0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jz3-Vc-ZFM" secondAttribute="trailing" id="6aB-mJ-wgT"/>
+                <constraint firstItem="jz3-Vc-ZFM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gZj-IY-XnN"/>
+                <constraint firstAttribute="bottom" secondItem="jz3-Vc-ZFM" secondAttribute="bottom" id="kdc-rx-dKm"/>
+                <constraint firstItem="jz3-Vc-ZFM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rca-3Q-l7Y"/>
+            </constraints>
+            <size key="customSize" width="178" height="190"/>
+            <connections>
+                <outlet property="backgroudContentView" destination="EFE-g3-rPJ" id="edL-Rq-imE"/>
+                <outlet property="backgroundView" destination="EFE-g3-rPJ" id="bm0-HX-CpK"/>
+                <outlet property="contentLabel" destination="7OU-WW-lRD" id="acK-yd-hE8"/>
+            </connections>
+            <point key="canvasLocation" x="223.91304347826087" y="52.566964285714285"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="EFE-g3-rPJ">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

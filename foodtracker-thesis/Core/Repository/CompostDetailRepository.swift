@@ -14,21 +14,28 @@ class CompostDetailRepository{
     let entityName = CompostDetail.self.description()
     let context = CoreDataManager.sharedManager.persistentContainer.viewContext
     
-    func createCompostDetail(compost_id: String, food_type_id: Int, ingredient_name: String){
+    func createCompostDetail(compost_id: String,
+                             compost_type_id: Int,
+                             compost_name: String,
+                             compost_phase: String)->Bool{
         do{
             let compostDetail = CompostDetail(context: context)
-            compostDetail.ingredientName = ingredient_name
+            compostDetail.compostPhase = compost_phase
+            compostDetail.compostName = compost_name
             
-            if let compostDetails = CompostDataRepository.shared.getCompostDataById(compost_id: compost_id){
-                compostDetail.compostId = compostDetails.compostId
+            if let compostHeaders = CompostDataRepository.shared.getCompostDataById(compost_id: compost_id){
+                compostDetail.compostId = compostHeaders.compostId
             }
-            if let compostTypes = FoodCategoryRepository.shared.getFoodCategoryById(id: food_type_id){
-                compostDetail.foodTypeId = compostTypes.foodTypeId
+            
+            if let compostTypes = CompostTypeRepository.shared.getCompostTypeById(compostTypeId: compost_type_id){
+                compostDetail.compostTypeId = compostTypes.compostTypeId
             }
             try context.save()
+            return true
         }catch let error as NSError{
             print(error)
         }
+        return false
     }
     
     func getAllCompostDetail()->[CompostDetail]?{
@@ -52,6 +59,21 @@ class CompostDetailRepository{
             print(error)
         }
         return nil
+    }
+    
+    func updateCompostDetail(compost_id: String, new_phase: String)->Bool{
+            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
+            fetchRequest.predicate = NSPredicate(format: "compostId == '\(compost_id)'")
+            do{
+            let item = try context.fetch(fetchRequest)as? [CompostDetail]
+                let newCompostDetail = item?.first
+                newCompostDetail?.compostPhase = new_phase
+                try context.save()
+                return true
+            }catch let error as NSError{
+                print(error)
+            }
+        return false
     }
     
     func deleteCompostData(data: CompostDetail)->Bool{

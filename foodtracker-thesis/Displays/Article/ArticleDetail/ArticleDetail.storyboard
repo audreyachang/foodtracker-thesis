@@ -11,13 +11,55 @@
         <!--Article Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ArticleDetailViewController" customModule="foodtracker_thesis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goToArticleDetail" id="Y6W-OH-hqX" customClass="ArticleDetailViewController" customModule="foodtracker_thesis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiC-3M-IuT" customClass="DesignableButton" customModule="foodtracker_thesis" customModuleProvider="target">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAy-9v-mEd">
+                                        <rect key="frame" x="10" y="10" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="oAy-9v-mEd" firstAttribute="top" secondItem="JiC-3M-IuT" secondAttribute="top" constant="10" id="1rG-c0-led"/>
+                                    <constraint firstItem="oAy-9v-mEd" firstAttribute="leading" secondItem="JiC-3M-IuT" secondAttribute="leading" constant="10" id="IWp-ZC-vkb"/>
+                                    <constraint firstAttribute="trailing" secondItem="oAy-9v-mEd" secondAttribute="trailing" constant="10" id="Lhh-bf-MNp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.68628668790000003" green="0.69018959999999996" blue="0.69020247459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JiC-3M-IuT" secondAttribute="trailing" constant="10" id="1Dz-0J-a5q"/>
+                            <constraint firstItem="JiC-3M-IuT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="UlC-pm-OtX"/>
+                            <constraint firstItem="JiC-3M-IuT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="VAi-zP-Jwr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JiC-3M-IuT" secondAttribute="bottom" constant="10" id="tW8-8d-qad"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="oAy-9v-mEd" id="3wu-OD-xOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

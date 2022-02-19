@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671956D427B656AE0042EC7C /* ArticleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671956D227B656AE0042EC7C /* ArticleTableCell.swift */; };
+		671956D527B656AE0042EC7C /* ArticleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671956D327B656AE0042EC7C /* ArticleTableCell.xib */; };
 		671B634A27707018007CD051 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671B634927707018007CD051 /* CoreDataManager.swift */; };
 		671B634D27707135007CD051 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671B634C27707135007CD051 /* Constants.swift */; };
 		67285C692782B715009108D7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67285C682782B715009108D7 /* UIColor+Extension.swift */; };
@@ -50,8 +52,8 @@
 		67F09F1327732E3300B0C469 /* FoodRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1127732E3300B0C469 /* FoodRecordCell.xib */; };
 		67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1427732F7100B0C469 /* CompostTableCell.swift */; };
 		67F09F1727732F7100B0C469 /* CompostTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1527732F7100B0C469 /* CompostTableCell.xib */; };
-		67F09F1C27732FC700B0C469 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */; };
-		67F09F1D27732FC700B0C469 /* FoodCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */; };
+		67F09F1C27732FC700B0C469 /* CompostCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F1A27732FC700B0C469 /* CompostCategoryCell.swift */; };
+		67F09F1D27732FC700B0C469 /* CompostCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F09F1B27732FC700B0C469 /* CompostCategoryCell.xib */; };
 		67F09F212773307200B0C469 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F202773307200B0C469 /* Date+Extension.swift */; };
 		67F09F232773309800B0C469 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F222773309800B0C469 /* UIButton+Extension.swift */; };
 		67F09F262773311D00B0C469 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F09F252773311D00B0C469 /* Int+Extension.swift */; };
@@ -68,6 +70,14 @@
 		67F35B5D276AE2490068985B /* foodtracker_thesisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35B5C276AE2490068985B /* foodtracker_thesisTests.swift */; };
 		67F35B67276AE2490068985B /* foodtracker_thesisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35B66276AE2490068985B /* foodtracker_thesisUITests.swift */; };
 		67F35B69276AE2490068985B /* foodtracker_thesisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35B68276AE2490068985B /* foodtracker_thesisUITestsLaunchTests.swift */; };
+		67FD0B5F27B3A633002E9EAA /* CompostTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B5E27B3A633002E9EAA /* CompostTypeRepository.swift */; };
+		67FD0B6127B3AB88002E9EAA /* ArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6027B3AB88002E9EAA /* ArticleRepository.swift */; };
+		67FD0B6327B3AB96002E9EAA /* ArticleTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6227B3AB96002E9EAA /* ArticleTypeRepository.swift */; };
+		67FD0B6527B3ACE0002E9EAA /* WasteTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6427B3ACE0002E9EAA /* WasteTypeRepository.swift */; };
+		67FD0B6727B3B388002E9EAA /* PreloadArticleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6627B3B388002E9EAA /* PreloadArticleType.swift */; };
+		67FD0B6927B3B391002E9EAA /* PreloadArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6827B3B391002E9EAA /* PreloadArticle.swift */; };
+		67FD0B6B27B3B3A5002E9EAA /* PreloadWasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6A27B3B3A5002E9EAA /* PreloadWasteType.swift */; };
+		67FD0B6D27B3B3BA002E9EAA /* PreloadCompostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD0B6C27B3B3BA002E9EAA /* PreloadCompostType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +98,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		671956D227B656AE0042EC7C /* ArticleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableCell.swift; sourceTree = "<group>"; };
+		671956D327B656AE0042EC7C /* ArticleTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableCell.xib; sourceTree = "<group>"; };
 		671B634927707018007CD051 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		671B634C27707135007CD051 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		67285C682782B715009108D7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -127,12 +139,13 @@
 		673A0525278C533E008A2EE1 /* LabelWithTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWithTextField.xib; sourceTree = "<group>"; };
 		673A0529278C536B008A2EE1 /* LabelWithDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithDate.swift; sourceTree = "<group>"; };
 		673A052B278C5377008A2EE1 /* LabelWithDate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelWithDate.xib; sourceTree = "<group>"; };
+		67E4797127C124AB00CAF5EC /* foodtracker-thesis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "foodtracker-thesis.entitlements"; sourceTree = "<group>"; };
 		67F09F1027732E3300B0C469 /* FoodRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecordCell.swift; sourceTree = "<group>"; };
 		67F09F1127732E3300B0C469 /* FoodRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodRecordCell.xib; sourceTree = "<group>"; };
 		67F09F1427732F7100B0C469 /* CompostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTableCell.swift; sourceTree = "<group>"; };
 		67F09F1527732F7100B0C469 /* CompostTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompostTableCell.xib; sourceTree = "<group>"; };
-		67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
-		67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCell.xib; sourceTree = "<group>"; };
+		67F09F1A27732FC700B0C469 /* CompostCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostCategoryCell.swift; sourceTree = "<group>"; };
+		67F09F1B27732FC700B0C469 /* CompostCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompostCategoryCell.xib; sourceTree = "<group>"; };
 		67F09F202773307200B0C469 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		67F09F222773309800B0C469 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		67F09F252773311D00B0C469 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
@@ -153,6 +166,14 @@
 		67F35B62276AE2490068985B /* foodtracker-thesisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "foodtracker-thesisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F35B66276AE2490068985B /* foodtracker_thesisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodtracker_thesisUITests.swift; sourceTree = "<group>"; };
 		67F35B68276AE2490068985B /* foodtracker_thesisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodtracker_thesisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67FD0B5E27B3A633002E9EAA /* CompostTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompostTypeRepository.swift; sourceTree = "<group>"; };
+		67FD0B6027B3AB88002E9EAA /* ArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepository.swift; sourceTree = "<group>"; };
+		67FD0B6227B3AB96002E9EAA /* ArticleTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTypeRepository.swift; sourceTree = "<group>"; };
+		67FD0B6427B3ACE0002E9EAA /* WasteTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTypeRepository.swift; sourceTree = "<group>"; };
+		67FD0B6627B3B388002E9EAA /* PreloadArticleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadArticleType.swift; sourceTree = "<group>"; };
+		67FD0B6827B3B391002E9EAA /* PreloadArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadArticle.swift; sourceTree = "<group>"; };
+		67FD0B6A27B3B3A5002E9EAA /* PreloadWasteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadWasteType.swift; sourceTree = "<group>"; };
+		67FD0B6C27B3B3BA002E9EAA /* PreloadCompostType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadCompostType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +219,10 @@
 				673A050A278BE38E008A2EE1 /* FoodCategoryRepository.swift */,
 				673A050C278BE9DA008A2EE1 /* CompostDataRepsitory.swift */,
 				673A050E278BEA34008A2EE1 /* CompostDetailRepository.swift */,
+				67FD0B5E27B3A633002E9EAA /* CompostTypeRepository.swift */,
+				67FD0B6027B3AB88002E9EAA /* ArticleRepository.swift */,
+				67FD0B6227B3AB96002E9EAA /* ArticleTypeRepository.swift */,
+				67FD0B6427B3ACE0002E9EAA /* WasteTypeRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -209,6 +234,10 @@
 				673A0510278BEA44008A2EE1 /* PreloadFoodCategory.swift */,
 				673A0512278BEA54008A2EE1 /* PreloadCompostData.swift */,
 				673A0514278BEA62008A2EE1 /* PreloadCompostDetail.swift */,
+				67FD0B6627B3B388002E9EAA /* PreloadArticleType.swift */,
+				67FD0B6827B3B391002E9EAA /* PreloadArticle.swift */,
+				67FD0B6A27B3B3A5002E9EAA /* PreloadWasteType.swift */,
+				67FD0B6C27B3B3BA002E9EAA /* PreloadCompostType.swift */,
 			);
 			path = "Mock Data";
 			sourceTree = "<group>";
@@ -321,12 +350,14 @@
 				67F09F1127732E3300B0C469 /* FoodRecordCell.xib */,
 				67F09F1427732F7100B0C469 /* CompostTableCell.swift */,
 				67F09F1527732F7100B0C469 /* CompostTableCell.xib */,
-				67F09F1A27732FC700B0C469 /* FoodCategoryCell.swift */,
-				67F09F1B27732FC700B0C469 /* FoodCategoryCell.xib */,
+				67F09F1A27732FC700B0C469 /* CompostCategoryCell.swift */,
+				67F09F1B27732FC700B0C469 /* CompostCategoryCell.xib */,
 				673A051A278BF676008A2EE1 /* FoodItemRecommendationCell.swift */,
 				673A051B278BF676008A2EE1 /* FoodItemRecommendationCell.xib */,
 				673A051E278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift */,
 				673A051F278C4A74008A2EE1 /* FoodCategoryCollectionCell.xib */,
+				671956D227B656AE0042EC7C /* ArticleTableCell.swift */,
+				671956D327B656AE0042EC7C /* ArticleTableCell.xib */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -375,6 +406,7 @@
 		67F35B41276AE2470068985B /* foodtracker-thesis */ = {
 			isa = PBXGroup;
 			children = (
+				67E4797127C124AB00CAF5EC /* foodtracker-thesis.entitlements */,
 				671B634B27707126007CD051 /* Helpers */,
 				67F35B75276B29B30068985B /* Displays */,
 				67F35B42276AE2470068985B /* AppDelegate.swift */,
@@ -539,7 +571,8 @@
 				673A0526278C533E008A2EE1 /* LabelWithTextField.xib in Resources */,
 				673A051D278BF676008A2EE1 /* FoodItemRecommendationCell.xib in Resources */,
 				67285C7F27845DB9009108D7 /* CompostList.storyboard in Resources */,
-				67F09F1D27732FC700B0C469 /* FoodCategoryCell.xib in Resources */,
+				67F09F1D27732FC700B0C469 /* CompostCategoryCell.xib in Resources */,
+				671956D527B656AE0042EC7C /* ArticleTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,10 +605,13 @@
 				67F09F212773307200B0C469 /* Date+Extension.swift in Sources */,
 				67285C8427845DF8009108D7 /* FoodFormViewController.swift in Sources */,
 				67F09F1227732E3300B0C469 /* FoodRecordCell.swift in Sources */,
+				67FD0B6127B3AB88002E9EAA /* ArticleRepository.swift in Sources */,
 				673A0524278C532E008A2EE1 /* LabelWithTextField.swift in Sources */,
 				67285C7D2782BAB8009108D7 /* FoodTrackerViewController.swift in Sources */,
+				67FD0B6527B3ACE0002E9EAA /* WasteTypeRepository.swift in Sources */,
 				67F09F232773309800B0C469 /* UIButton+Extension.swift in Sources */,
 				67285C772782B77B009108D7 /* UIDevice+Extension.swift in Sources */,
+				67FD0B6B27B3B3A5002E9EAA /* PreloadWasteType.swift in Sources */,
 				67F35B43276AE2470068985B /* AppDelegate.swift in Sources */,
 				673A0520278C4A74008A2EE1 /* FoodCategoryCollectionCell.swift in Sources */,
 				67285C752782B76D009108D7 /* UIPageView+Extension.swift in Sources */,
@@ -586,11 +622,14 @@
 				67285C8D27845E4F009108D7 /* CompostFormViewController.swift in Sources */,
 				673A0507278BE20C008A2EE1 /* PreloadFoodData.swift in Sources */,
 				673A0513278BEA54008A2EE1 /* PreloadCompostData.swift in Sources */,
+				67FD0B6D27B3B3BA002E9EAA /* PreloadCompostType.swift in Sources */,
 				67285C6D2782B72F009108D7 /* UILabel+Extension.swift in Sources */,
-				67F09F1C27732FC700B0C469 /* FoodCategoryCell.swift in Sources */,
+				67F09F1C27732FC700B0C469 /* CompostCategoryCell.swift in Sources */,
 				673A0511278BEA44008A2EE1 /* PreloadFoodCategory.swift in Sources */,
 				673A050D278BE9DA008A2EE1 /* CompostDataRepsitory.swift in Sources */,
 				67F09F282773312C00B0C469 /* String+Extension.swift in Sources */,
+				67FD0B6327B3AB96002E9EAA /* ArticleTypeRepository.swift in Sources */,
+				67FD0B5F27B3A633002E9EAA /* CompostTypeRepository.swift in Sources */,
 				673A0509278BE24F008A2EE1 /* FoodDataRepository.swift in Sources */,
 				673A0515278BEA62008A2EE1 /* PreloadCompostDetail.swift in Sources */,
 				67285C8127845DC6009108D7 /* CompostListViewController.swift in Sources */,
@@ -601,8 +640,11 @@
 				67285C9927845FA1009108D7 /* ArticleDetailViewController.swift in Sources */,
 				67285C6B2782B720009108D7 /* UIImage+Extension.swift in Sources */,
 				67F35B45276AE2470068985B /* SceneDelegate.swift in Sources */,
+				671956D427B656AE0042EC7C /* ArticleTableCell.swift in Sources */,
 				67F09F262773311D00B0C469 /* Int+Extension.swift in Sources */,
+				67FD0B6727B3B388002E9EAA /* PreloadArticleType.swift in Sources */,
 				67F09F1627732F7100B0C469 /* CompostTableCell.swift in Sources */,
+				67FD0B6927B3B391002E9EAA /* PreloadArticle.swift in Sources */,
 				673A050F278BEA34008A2EE1 /* CompostDetailRepository.swift in Sources */,
 				671B634D27707135007CD051 /* Constants.swift in Sources */,
 			);
@@ -781,11 +823,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "foodtracker-thesis/foodtracker-thesis.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FTDV5D2867;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "foodtracker-thesis/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Welon;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -809,11 +853,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "foodtracker-thesis/foodtracker-thesis.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FTDV5D2867;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "foodtracker-thesis/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Welon;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
